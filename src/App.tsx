@@ -256,69 +256,69 @@ const sponsorsData = [
 
 const Members = [
   {
-    id: 1,
-    name: "Anwesha Ghosh",
-    role: "Vice President",
-    image: "/team/anwesha.jpeg",
-  },
-  {
-    id: 2,
-    name: "Anushka Gautam ",
-    role: "Co-President",
-    image: "/team/anushka.jpg",
-  },
-  {
-    id: 3,
-    name: "Diya Tripathi",
-    role: "Co-President",
-    image: "/team/diya.jpeg",
-  },
-  {
-    id: 4,
-    name: "Ananya Agarwal",
-    role: "Events Co-HOD",
-    image: "/team/ananya.JPG",
-  },
-  {
-    id: 5,
-    name: "Mihika Grover",
-    role: "Marketing Co-HOD",
-    image: "/team/mihika.jpg",
-  },
-  {
-    id: 6,
-    name: "Deshana Mehta",
-    role: "Marketing Co-HOD",
-    image: "/team/deshana.jpeg",
-  },
-  {
     id: 7,
-    name: "Devansh Srivastava",
-    role: "Marketing Co-HOD",
-    image: "/team/devansh.jpeg",
+    name: "Ananya Agarwal",
+    role: "Co-President",
+    image: "/team/abhinav.jpg",
   },
   {
     id: 8,
-    name: "Anam Ahamed",
-    role: "Outreach Co-HOD",
-    image: "/team/anam.jpeg",
+    name: "Mahima Mayuresh",
+    role: "Events Head",
+    image: "/team/abhinav.jpg",
   },
   {
-    id: 9,
-    name: "Vanshika Agarwal",
-    role: "Outreach Co-HOD",
-    image: "/team/vanshika.jpeg",
+    id: 2,
+    name: "Prithviraj Hada",
+    role: "Logistics POC",
+    image: "/team/abhinav.jpg",
+  },
+  {
+    id: 1,
+    name: "Asmi Chaudhary",
+    role: "Outreach Co-POC",
+    image: "/team/abhinav.jpg",
+  },
+  {
+    id: 3,
+    name: "Bhavyaa Karanwal",
+    role: "Outreach Co-POC",
+    image: "/team/abhinav.jpg",
+  },
+  {
+    id: 5,
+    name: "Sreejit Dey",
+    role: "Events POC",
+    image: "/team/abhinav.jpg",
+  },
+  {
+    id: 4,
+    name: "Kyra Reyar",
+    role: "Marketing POC",
+    image: "/team/abhinav.jpg",
   },
   {
     id: 10,
-    name: "Kenisha Chandak",
-    role: "Policy HOD",
-    image: "/team/kenisha.jpeg",
+    name: "Sayana Saini",
+    role: "Marketing POC",
+    image: "/team/abhinav.jpg",
+  },
+  {
+    id: 6,
+    name: "Tarun Shetty",
+    role: "Marketing and Design POC",
+    image: "/team/abhinav.jpg",
+  },
+  {
+    id: 9,
+    name: "Preksha Palva",
+    role: "",
+    image: "/team/abhinav.jpg",
   },
   {
     id: 11,
-    name: "Abhinav M Hari",
-    role: "Website HOD",
+    name: "Anurag Dey",
+    role: "Website Development",
     image: "/team/abhinav.jpg",
   },
 ];
@@ -329,23 +329,49 @@ const App = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   return (
-    <div className="font-sans text-gray-800">
+    <div className="font-[Arial] text-gray-800">
       {/* Navigation Bar */}
       <nav className="bg-white bg-opacity-95 shadow-sm border-b">
-        <div className="container mx-auto flex justify-between items-center py-4 px-6">
+        <div className="container mx-auto flex justify-between items-center py-1 px-6">
           <div className="flex items-center">
-            <div className="text-red-700 font-bold text-2xl">WiCSCon</div>
+            <img src="/wicscon_logo.png" alt="WiCSCon Logo" className="h-20" />
           </div>
           <div className="hidden md:flex space-x-8 text-sm font-medium">
+            <a
+              href="https://wics.ashoka.edu.in/"
+              target="_blank"
+              className="hover:text-red-600 transition-colors"
+            >
+              WiCS
+            </a>
             <a href="#about" className="hover:text-red-600 transition-colors">
               About
             </a>
-            <a
-              href="#highlights"
-              className="hover:text-red-600 transition-colors"
-            >
-              Highlights
-            </a>
+            <div className="relative group">
+              <button className="hover:text-red-600 transition-colors flex items-center gap-1">
+                Past Editions
+              </button>
+              <div className="absolute left-0 top-full pt-2 w-32 hidden group-hover:block z-50">
+                <div className="bg-white rounded-md shadow-lg py-2 border border-gray-100">
+                  <a
+                    href="/wicscon_2024.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 hover:bg-red-50 hover:text-red-600 transition-colors"
+                  >
+                    2024
+                  </a>
+                  <a
+                    href="/wicscon_2025.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 hover:bg-red-50 hover:text-red-600 transition-colors"
+                  >
+                    2025
+                  </a>
+                </div>
+              </div>
+            </div>
             <a
               href="#speakers"
               className="hover:text-red-600 transition-colors"
@@ -383,11 +409,15 @@ const App = () => {
         ></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Empowering Innovation Through Diversity
+            Designing Tomorrow, Today
           </h1>
           <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
-            Join us for the annual conference where women in technology connect,
-            inspire, and transform the future.
+            With the theme Designing Tomorrow, Today, this two-day event will explore
+            the intersections of technology, diversity, and inclusion. Building on the
+            success of last year’s conference, which had over 200 attendees, WiCSCon
+            2026 aims to create a space where participants can engage with emerging
+            ideas, examine the influence of technology on society, and consider how we
+            shape the tools and systems of tomorrow.
           </p>
           <a href="https://unstop.com/o/oa8ONt0?lb=IzeFOU31">
             <button className="text-lg px-8 py-3 rounded-full bg-gradient-to-r from-red-700 to-red-900 hover:from-red-800 hover:to-red-950 text-white font-medium shadow-lg">
@@ -455,7 +485,7 @@ const App = () => {
                   Conference Date
                 </div>
                 <div className="text-4xl font-bold text-red-700">
-                  March 29th, 2025
+                  21st-22nd March, 2026
                 </div>
                 <div className="text-lg text-gray-500 mt-2">
                   Ashoka University, Sonipat
@@ -469,7 +499,7 @@ const App = () => {
                 </div>
                 <div className="text-4xl font-bold text-red-700">
                   {Math.ceil(
-                    (new Date("March 29, 2025 00:00:00").getTime() -
+                    (new Date("March 21, 2026 00:00:00").getTime() -
                       new Date().getTime()) /
                       (1000 * 60 * 60 * 24)
                   )}
