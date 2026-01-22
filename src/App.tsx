@@ -22,7 +22,7 @@ const speakersData = {
       topic: "The Future of Aerospace Technology",
       description:
         "Revolutionizing Indian Enterprises with Deep Tech AI: Opportunities, Challenges, and the Path Ahead",
-      image: "vrinda.jpeg",
+      image: "/vrinda.jpeg",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const speakersData = {
       topic: "Empowering the Next Generation of Coders",
       description:
         "Empowering Future Innovators: Making Computer Science Education Accessible for High School Students in India",
-      image: "sumita.jpeg",
+      image: "/sumita.jpeg",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ const speakersData = {
       topic: "Women in Tech and Leadership",
       description:
         "Climbing the Ladder vs Building Your Own: Exploring Leadership in Corporate and Entrepreneurship",
-      image: "aashna.jpeg",
+      image: "/aashna.jpeg",
     },
     {
       id: 4,
@@ -48,7 +48,7 @@ const speakersData = {
       role: "Director, CCAOI & Global Leader in Internet Governance",
       topic: "Internet Governance and Digital Rights",
       description: "The AI Dilemma: Who Governs the Machines Governing Us?",
-      image: "amrita.jpeg",
+      image: "/amrita.jpeg",
     },
     {
       id: 5,
@@ -57,7 +57,7 @@ const speakersData = {
       topic: "Entrepreneurship and Innovation in Science & Technology",
       description:
         "Climbing the Ladder vs Building Your Own: Exploring Leadership in Corporate and Entrepreneurship",
-      image: "divya.jpeg",
+      image: "/divya.jpeg",
     },
     {
       id: 6,
@@ -65,7 +65,7 @@ const speakersData = {
       role: "Co-Founder, Internet Freedom Foundation",
       topic: "Digital Rights and Privacy",
       description: "The AI Dilemma: Who Governs the Machines Governing Us?",
-      image: "apar.webp",
+      image: "/apar.webp",
     },
     {
       id: 7,
@@ -74,7 +74,7 @@ const speakersData = {
       topic: "Tech, Leadership, and the Future of Digital Transformation",
       description:
         "Auction Action and the Art of Strategic Trading - A Gamified Workshop.",
-      image: "nivedita.jpeg",
+      image: "/nivedita.jpeg",
     },
     {
       id: 8,
@@ -82,7 +82,7 @@ const speakersData = {
       role: "Research Analyst, Carnegie Endowment for International Peace",
       topic: "Entrepreneurship and Innovation",
       description: "The AI Dilemma: Who Governs the Machines Governing Us?",
-      image: "nidhi.jpg",
+      image: "/nidhi.jpg",
     },
     {
       id: 9,
@@ -90,7 +90,7 @@ const speakersData = {
       role: "Vice President - Innovation, Axis Max Life Insurance",
       topic: "Journey of ML and Generative AI",
       description: "Journey of ML and Generative AI",
-      image: "colin.jpeg",
+      image: "/colin.jpeg",
     },
     {
       id: 10,
@@ -98,7 +98,7 @@ const speakersData = {
       role: "Product Manager, Google",
       topic: "Product Teardown and Management Workshop",
       description: "Product Teardown and Management Workshop",
-      image: "bhavya.jpeg",
+      image: "/bhavya.jpeg",
     },
     {
       id: 11,
@@ -106,7 +106,7 @@ const speakersData = {
       role: "Director of the Data Management and Analysis Vertical at Niti Aayog",
       topic: "Keynote Talk 1",
       description: "TBA",
-      image: "anna.jpeg ",
+      image: "/anna.jpeg ",
     },
     {
       id: 12,
@@ -115,7 +115,7 @@ const speakersData = {
       topic: "Entrepreneurship and Innovation",
       description:
         "Climbing the Ladder vs Building Your Own: Exploring Leadership in Corporate and Entrepreneurship",
-      image: "romita.jpeg",
+      image: "/romita.jpeg",
     },
   ],
 };
@@ -245,12 +245,12 @@ const sponsorsData = [
   {
     id: 1,
     name: "Meta",
-    image: "sponsors/meta.jpg",
+    image: "/sponsors/meta.jpg",
   },
   {
     id: 2,
     name: "Axis Max Life Insurance",
-    image: "sponsors/axis_life.svg",
+    image: "/sponsors/axis_life.svg",
   },
 ];
 
@@ -259,73 +259,73 @@ const Members = [
     id: 1,
     name: "Anam Ahamed",
     role: "Co-President",
-    image: "team/anam_ahamed.jpg",
+    image: "/team/anam_ahamed.jpg",
   },
   {
     id: 2,
     name: "Ananya Agarwal",
     role: "Co-President",
-    image: "team/ananya_agarwal.jpeg",
+    image: "/team/ananya_agarwal.jpeg",
   },
   {
     id: 3,
     name: "Mahima Mayuresh",
     role: "Events Head",
-    image: "team/mahima_mayuresh.jpg",
+    image: "/team/mahima_mayuresh.jpg",
   },
   {
     id: 4,
     name: "Prithviraj Hada",
     role: "Logistics POC",
-    image: "team/prithviraj_hada.jpg",
+    image: "/team/prithviraj_hada.jpg",
   },
   {
     id: 5,
     name: "Asmi Chaudhary",
     role: "Outreach Co-POC",
-    image: "team/asmi_chaudhary.jpeg",
+    image: "/team/asmi_chaudhary.jpeg",
   },
   {
     id: 6,
     name: "Bhavyaa Karanwal",
     role: "Outreach Co-POC",
-    image: "team/bhavyaa_karanwal.jpeg",
+    image: "/team/bhavyaa_karanwal.jpeg",
   },
   {
     id: 7,
     name: "Sreejit Dey",
     role: "Events POC",
-    image: "team/sreejit_dey.jpg",
+    image: "/team/sreejit_dey.jpg",
   },
   {
     id: 8,
     name: "Kyra Reyar",
     role: "Marketing POC",
-    image: "team/kyra_reyar.jpeg",
+    image: "/team/kyra_reyar.jpeg",
   },
   {
     id: 9,
     name: "Sayana Saini",
     role: "Marketing POC",
-    image: "team/sayana_saini.jpeg",
+    image: "/team/sayana_saini.jpeg",
   },
   {
     id: 10,
     name: "Tarun Shetty",
     role: "Marketing and Design POC",
-    image: "team/tarun_shetty.jpg",
+    image: "/team/tarun_shetty.jpg",
   },
   {
     id: 11,
     name: "Preksha Alva",
     role: "Competitions HOD",
-    image: "team/preksha_praveen_alva.jpeg",
+    image: "/team/preksha_praveen_alva.jpeg",
   },
   {
     id: 12,
     name: "Anurag Dey",
     role: "Website Development",
-    image: "team/anurag_dey.png",
+    image: "/team/anurag_dey.png",
   },
 ];
 
@@ -340,7 +340,7 @@ const App = () => {
       <nav className="bg-white bg-opacity-95 shadow-sm border-b">
         <div className="container mx-auto flex justify-between items-center py-1 px-6">
           <div className="flex items-center">
-            <img src="wicscon_logo.png" alt="WiCSCon Logo" className="h-20" />
+            <img src="/wicscon_logo.png" alt="WiCSCon Logo" className="h-20" />
           </div>
           <div className="hidden md:flex space-x-8 text-sm font-medium">
             <a
@@ -360,7 +360,7 @@ const App = () => {
               <div className="absolute left-0 top-full pt-2 w-32 hidden group-hover:block z-50">
                 <div className="bg-white rounded-md shadow-lg py-2 border border-gray-100">
                   <a
-                    href="wicscon_2024.pdf"
+                    href="/wicscon_2024.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block px-4 py-2 hover:bg-red-50 hover:text-red-600 transition-colors"
@@ -368,7 +368,7 @@ const App = () => {
                     2024
                   </a>
                   <a
-                    href="wicscon_2025.pdf"
+                    href="/wicscon_2025.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block px-4 py-2 hover:bg-red-50 hover:text-red-600 transition-colors"
@@ -468,7 +468,7 @@ const App = () => {
             <div className="md:w-1/2 rounded-xl overflow-hidden shadow-xl">
               <div className="bg-gray-100 aspect-video flex items-center justify-center">
                 <img
-                  src="BannerImage.jpg"
+                  src="/BannerImage.jpg"
                   alt="Women in Tech Conference"
                   className="w-full h-full object-cover"
                 />
