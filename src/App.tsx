@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ThemeToggle } from "./components/ThemeToggle";
 
 interface Speaker {
   id: number;
@@ -269,60 +270,84 @@ const Members = [
   },
   {
     id: 3,
-    name: "Mahima Mayuresh",
-    role: "Events Head",
-    image: "/team/mahima_mayuresh.jpg",
+    name: "Mihika Grover",
+    role: "Vice President",
+    image: "/team/mihika_grover.jpeg",
   },
   {
     id: 4,
-    name: "Prithviraj Hada",
-    role: "Logistics POC",
-    image: "/team/prithviraj_hada.jpg",
+    name: "Mahima Mayuresh",
+    role: "Events Co-POC",
+    image: "/team/mahima_mayuresh.jpg",
   },
   {
     id: 5,
+    name: "Sreejit Dey",
+    role: "Events Co-POC",
+    image: "/team/sreejit_dey.jpg",
+  },
+  {
+    id: 6,
+    name: "Prithviraj Hada",
+    role: "Logistics Co-POC",
+    image: "/team/prithviraj_hada.jpg",
+  },
+  {
+    id: 7,
+    name: "Yididiya Megenta",
+    role: "Logistics Co-POC",
+    image: "/team/yididiya_megenta.jpg",
+  },
+  {
+    id: 8,
     name: "Asmi Chaudhary",
     role: "Outreach Co-POC",
     image: "/team/asmi_chaudhary.jpeg",
   },
   {
-    id: 6,
+    id: 9,
     name: "Bhavyaa Karanwal",
     role: "Outreach Co-POC",
     image: "/team/bhavyaa_karanwal.jpeg",
   },
   {
-    id: 7,
-    name: "Sreejit Dey",
-    role: "Events POC",
-    image: "/team/sreejit_dey.jpg",
-  },
-  {
-    id: 8,
+    id: 10,
     name: "Kyra Reyar",
     role: "Marketing POC",
     image: "/team/kyra_reyar.jpeg",
   },
   {
-    id: 9,
+    id: 11,
     name: "Sayana Saini",
     role: "Marketing POC",
     image: "/team/sayana_saini.jpeg",
   },
   {
-    id: 10,
+    id: 12,
     name: "Tarun Shetty",
-    role: "Marketing and Design POC",
+    role: "Design POC",
     image: "/team/tarun_shetty.jpg",
   },
+   {
+    id: 13,
+    name: "Devansh Srivastava",
+    role: "Design POC",
+    image: "/team/devansh_srivastava.jpg",
+  }, 
   {
-    id: 11,
+    id: 14,
     name: "Preksha Alva",
-    role: "Competitions HOD",
+    role: "Competitions Co-POC",
     image: "/team/preksha_praveen_alva.jpeg",
   },
   {
-    id: 12,
+    id: 15,
+    name: "Ritisha Kapur",
+    role: "Competitions Co-POC",
+    image: "/team/ritisha_kapur.jpeg",
+  },
+  {
+    id: 16,
     name: "Anurag Dey",
     role: "Website Development",
     image: "/team/anurag_dey.png",
@@ -335,9 +360,9 @@ const App = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   return (
-    <div className="font-[Arial] text-gray-800">
+    <div className="font-[Arial] text-gray-800 dark:bg-gray-900 dark:text-gray-200 min-h-screen transition-colors">
       {/* Navigation Bar */}
-      <nav className="bg-white bg-opacity-95 shadow-sm border-b">
+      <nav className="bg-white dark:bg-gray-800 bg-opacity-95 shadow-sm border-b dark:border-gray-700 transition-colors">
         <div className="container mx-auto flex justify-between items-center py-1 px-6">
           <div className="flex items-center">
             <img src="/wicscon_logo.png" alt="WiCSCon Logo" className="h-20" />
@@ -346,24 +371,24 @@ const App = () => {
             <a
               href="https://wics.ashoka.edu.in/"
               target="_blank"
-              className="hover:text-red-600 transition-colors"
+              className="hover:text-red-600 dark:text-gray-200 transition-colors"
             >
               WiCS
             </a>
-            <a href="#about" className="hover:text-red-600 transition-colors">
+            <a href="#about" className="hover:text-red-600 dark:text-gray-200 transition-colors">
               About
             </a>
             <div className="relative group">
-              <button className="hover:text-red-600 transition-colors flex items-center gap-1">
+              <button className="hover:text-red-600 dark:text-gray-200 transition-colors flex items-center gap-1">
                 Past Editions
               </button>
               <div className="absolute left-0 top-full pt-2 w-32 hidden group-hover:block z-50">
-                <div className="bg-white rounded-md shadow-lg py-2 border border-gray-100">
+                <div className="bg-white dark:bg-gray-800 rounded-md shadow-lg py-2 border border-gray-100 dark:border-gray-700">
                   <a
                     href="/wicscon_2024.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block px-4 py-2 hover:bg-red-50 hover:text-red-600 transition-colors"
+                    className="block px-4 py-2 hover:bg-red-50 dark:hover:bg-gray-700 hover:text-red-600 dark:text-gray-200 transition-colors"
                   >
                     2024
                   </a>
@@ -371,7 +396,7 @@ const App = () => {
                     href="/wicscon_2025.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block px-4 py-2 hover:bg-red-50 hover:text-red-600 transition-colors"
+                    className="block px-4 py-2 hover:bg-red-50 dark:hover:bg-gray-700 hover:text-red-600 dark:text-gray-200 transition-colors"
                   >
                     2025
                   </a>
@@ -380,30 +405,33 @@ const App = () => {
             </div>
             <a
               href="#speakers"
-              className="hover:text-red-600 transition-colors"
+              className="hover:text-red-600 dark:text-gray-200 transition-colors"
             >
               Speakers
             </a>
             <a
               href="#sponsors"
-              className="hover:text-red-600 transition-colors"
+              className="hover:text-red-600 dark:text-gray-200 transition-colors"
             >
               Sponsors
             </a>
-            <a href="#faqs" className="hover:text-red-600 transition-colors">
+            <a href="#faqs" className="hover:text-red-600 dark:text-gray-200 transition-colors">
               FAQs
             </a>
           </div>
-          <a href="https://unstop.com/o/oa8ONt0?lb=IzeFOU31">
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+            <a href="https://unstop.com/o/oa8ONt0?lb=IzeFOU31">
             <button className="bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-4 rounded-md">
               Register Now
             </button>
           </a>
+          </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center overflow-hidden bg-red-900">
+      <section className="relative h-96 flex items-center justify-center overflow-hidden bg-red-900 dark:bg-red-950">
         <div className="absolute inset-0 bg-gradient-to-r from-red-900/80 to-red-800/80"></div>
         <div
           className="absolute inset-0 opacity-20"
@@ -434,20 +462,20 @@ const App = () => {
       </section>
 
       {/* About Section Preview */}
-      <section className="py-16 bg-white" id="about">
+      <section className="py-16 bg-white dark:bg-gray-900" id="about">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold mb-6 text-red-700">
+              <h2 className="text-3xl font-bold mb-6 text-red-700 dark:text-red-500">
                 About WiCS & WiCSCon
               </h2>
-              <p className="text-lg mb-6">
+              <p className="text-lg mb-6 dark:text-gray-300">
                 The Women in Computing Society (WiCS) is a global community
                 dedicated to increasing gender diversity in technology. We
                 empower women through mentorship, education, and networking
                 opportunities.
               </p>
-              <button className="text-red-700 border border-red-700 hover:bg-red-50 py-2 px-4 rounded-md flex items-center">
+              <button className="text-red-700 dark:text-red-500 border border-red-700 dark:border-red-500 hover:bg-red-50 dark:hover:bg-gray-800 py-2 px-4 rounded-md flex items-center transition-colors">
                 Learn More About Our Mission
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -466,7 +494,7 @@ const App = () => {
               </button>
             </div>
             <div className="md:w-1/2 rounded-xl overflow-hidden shadow-xl">
-              <div className="bg-gray-100 aspect-video flex items-center justify-center">
+              <div className="bg-gray-100 dark:bg-gray-800 aspect-video flex items-center justify-center">
                 <img
                   src="/BannerImage.jpg"
                   alt="Women in Tech Conference"
@@ -479,38 +507,38 @@ const App = () => {
       </section>
 
       {/* Countdown Section */}
-      <section className="py-16 bg-red-50" id="countdown">
+      <section className="py-16 bg-red-50 dark:bg-gray-800" id="countdown">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
+          <h2 className="text-3xl font-bold mb-12 text-center text-red-700 dark:text-red-500">
             Conference Details
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div className="bg-white dark:bg-gray-700 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
               <div className="p-6">
-                <div className="text-2xl font-semibold text-gray-600 mb-2">
+                <div className="text-2xl font-semibold text-gray-600 dark:text-gray-300 mb-2">
                   Conference Date
                 </div>
-                <div className="text-4xl font-bold text-red-700">
+                <div className="text-4xl font-bold text-red-700 dark:text-red-500">
                   21st-22nd March, 2026
                 </div>
-                <div className="text-lg text-gray-500 mt-2">
+                <div className="text-lg text-gray-500 dark:text-gray-400 mt-2">
                   Ashoka University, Sonipat
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div className="bg-white dark:bg-gray-700 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
               <div className="p-6">
-                <div className="text-2xl font-semibold text-gray-600 mb-2">
+                <div className="text-2xl font-semibold text-gray-600 dark:text-gray-300 mb-2">
                   Days Until Conference
                 </div>
-                <div className="text-4xl font-bold text-red-700">
+                <div className="text-4xl font-bold text-red-700 dark:text-red-500">
                   {Math.ceil(
                     (new Date("March 21, 2026 00:00:00").getTime() -
                       new Date().getTime()) /
                       (1000 * 60 * 60 * 24)
                   )}
                 </div>
-                <div className="text-lg text-gray-500 mt-2">
+                <div className="text-lg text-gray-500 dark:text-gray-400 mt-2">
                   Don't miss out on this exciting event!
                 </div>
               </div>
@@ -520,21 +548,21 @@ const App = () => {
       </section>
 
       {/* Speakers Preview */}
-      <section className="py-16 bg-white" id="speakers">
+      <section className="py-16 bg-white dark:bg-gray-900" id="speakers">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
+          <h2 className="text-3xl font-bold mb-12 text-center text-red-700 dark:text-red-500">
             Speakers & Events
           </h2>
 
-          <div className="flex mb-8 border-b">
+          <div className="flex mb-8 border-b dark:border-gray-700">
             {tabs.map((day) => (
               <button
                 key={day}
                 onClick={() => setActiveDay(day)}
-                className={`px-4 py-2 font-medium ${
+                className={`px-4 py-2 font-medium transition-colors ${
                   activeDay === day
-                    ? "text-red-700 border-b-2 border-red-700"
-                    : "text-gray-500"
+                    ? "text-red-700 dark:text-red-500 border-b-2 border-red-700 dark:border-red-500"
+                    : "text-gray-500 dark:text-gray-400"
                 }`}
               >
                 {day}
@@ -549,9 +577,9 @@ const App = () => {
                 {speakersData.Speakers.map((speaker) => (
                   <div
                     key={speaker.id}
-                    className="overflow-hidden transition-all duration-300 hover:shadow-lg border rounded-lg"
+                    className="overflow-hidden transition-all duration-300 hover:shadow-lg border dark:border-gray-700 dark:bg-gray-800 rounded-lg"
                   >
-                    <div className="aspect-square relative overflow-hidden bg-gray-100">
+                    <div className="aspect-square relative overflow-hidden bg-gray-100 dark:bg-gray-700">
                       <img
                         src={speaker.image}
                         alt={speaker.name}
@@ -559,21 +587,21 @@ const App = () => {
                       />
                     </div>
                     <div className="p-6">
-                      <h3 className="text-xl font-bold mb-1">{speaker.name}</h3>
-                      <p className="text-red-700 mb-3 min-h-12">
+                      <h3 className="text-xl font-bold mb-1 dark:text-white">{speaker.name}</h3>
+                      <p className="text-red-700 dark:text-red-500 mb-3 min-h-12">
                         {speaker.role}
                       </p>
                       {/* <p className="text-sm text-gray-600 mb-4">
                         {speaker.topic}
                       </p> */}
                     </div>
-                    <div className="border-t p-4">
+                    <div className="border-t dark:border-gray-700 p-4">
                       <button
                         onClick={() => {
                           setSelectedSpeaker(speaker);
                           setIsModalOpen(true);
                         }}
-                        className="w-full border border-gray-300 hover:bg-red-700 hover:text-white py-2 px-4 rounded-md"
+                        className="w-full border border-gray-300 dark:border-gray-600 hover:bg-red-700 hover:text-white dark:text-gray-200 py-2 px-4 rounded-md transition-colors"
                       >
                         View Details
                       </button>
@@ -591,15 +619,15 @@ const App = () => {
                 {eventData.Events.map((event) => (
                   <div
                     key={event.id}
-                    className="p-6 bg-gray-100 rounded-lg shadow hover:bg-red-50 hover:scale-105 transition-colors duration-300"
+                    className="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow hover:bg-red-50 dark:hover:bg-gray-700 hover:scale-105 transition-colors duration-300"
                   >
-                    <h3 className="text-xl font-bold mb-1">{event.name}</h3>
-                    <p className="text-gray-600 mb-1">{event.time}</p>
-                    <p className="text-sm text-gray-500 mb-3">
+                    <h3 className="text-xl font-bold mb-1 dark:text-white">{event.name}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 mb-1">{event.time}</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
                       Location: {event.location}
                     </p>
                     {event.speakers.length > 0 && (
-                      <p className="text-sm text-gray-700">
+                      <p className="text-sm text-gray-700 dark:text-gray-300">
                         Speakers: {event.speakers.join(", ")}
                       </p>
                     )}
@@ -612,9 +640,9 @@ const App = () => {
       </section>
 
       {/* Sponsors Preview */}
-      <section className="py-16 bg-red-50" id="sponsors">
+      <section className="py-16 bg-red-50 dark:bg-gray-800" id="sponsors">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
+          <h2 className="text-3xl font-bold mb-12 text-center text-red-700 dark:text-red-500">
             Sponsors & Partners
           </h2>
 
@@ -626,7 +654,7 @@ const App = () => {
               {sponsorsData.map((sponsor) => (
                 <div
                   key={sponsor.id}
-                  className="bg-white rounded-lg shadow-md p-6 w-36 h-36 flex items-center justify-center"
+                  className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 w-36 h-36 flex items-center justify-center"
                 >
                   <img
                     src={sponsor.image}
@@ -638,11 +666,11 @@ const App = () => {
             </div>
           </div>
 
-          <div className="bg-red-100 rounded-xl p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4 text-red-700">
+          <div className="bg-red-100 dark:bg-gray-700 rounded-xl p-8 text-center">
+            <h3 className="text-2xl font-bold mb-4 text-red-700 dark:text-red-500">
               Interested in Sponsoring?
             </h3>
-            <p className="text-lg mb-6 max-w-2xl mx-auto">
+            <p className="text-lg mb-6 max-w-2xl mx-auto dark:text-gray-300">
               Join our diverse community of sponsors and connect with the
               brightest talent and industry leaders in tech.
             </p>
@@ -656,74 +684,74 @@ const App = () => {
       </section>
 
       {/* Meet the Team Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-12 text-center text-red-700">
+          <h2 className="text-3xl font-bold mb-12 text-center text-red-700 dark:text-red-500">
             Meet the Team
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {Members.map((member) => (
-              <div className="flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-xl bg-white rounded-lg p-6">
-                <div className="w-48 h-48 rounded-full overflow-hidden mb-4 border-4 border-red-200">
+              <div className="flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-xl bg-white dark:bg-gray-800 rounded-lg p-6">
+                <div className="w-48 h-48 rounded-full overflow-hidden mb-4 border-4 border-red-200 dark:border-red-900">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-red-800">
+                <h3 className="text-xl font-semibold text-red-800 dark:text-red-400">
                   {member.name}
                 </h3>
-                <p className="text-red-600">{member.role}</p>
+                <p className="text-red-600 dark:text-red-500">{member.role}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <hr className="w-3/4 h-1 mx-auto my-4 bg-red-100 border-0 rounded-sm md:my-10"></hr>
+      <hr className="w-3/4 h-1 mx-auto my-4 bg-red-100 dark:bg-gray-700 border-0 rounded-sm md:my-10"></hr>
 
       {/* FAQs Section */}
-      <section id="faqs" className="py-16 bg-white">
+      <section id="faqs" className="py-16 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-6 text-center text-red-700">
+          <h2 className="text-3xl font-bold mb-6 text-center text-red-700 dark:text-red-500">
             FAQs
           </h2>
           <div className="space-y-6"></div>
-          <div className="border-b pb-4">
-            <h3 className="text-xl font-semibold mb-2">
+          <div className="border-b dark:border-gray-700 pb-4">
+            <h3 className="text-xl font-semibold mb-2 dark:text-white">
               Who can attend the conference?
             </h3>
-            <p className="text-gray-700">
+            <p className="text-gray-700 dark:text-gray-300">
               The conference is open to everyone, regardless of gender, who is
               interested in supporting and promoting diversity in technology.
             </p>
           </div>
-          <div className="border-b pb-4">
-            <h3 className="text-xl font-semibold mb-2">
+          <div className="border-b dark:border-gray-700 pb-4">
+            <h3 className="text-xl font-semibold mb-2 dark:text-white">
               How can I register for the event?
             </h3>
-            <p className="text-gray-700">
+            <p className="text-gray-700 dark:text-gray-300">
               You can register for the event by clicking the "Register Now"
               button on our website and filling out the registration form.
             </p>
           </div>
-          <div className="border-b pb-4">
-            <h3 className="text-xl font-semibold mb-2">
+          <div className="border-b dark:border-gray-700 pb-4">
+            <h3 className="text-xl font-semibold mb-2 dark:text-white">
               Are there any sponsorship opportunities?
             </h3>
-            <p className="text-gray-700">
+            <p className="text-gray-700 dark:text-gray-300">
               Yes, we offer various sponsorship packages. Please contact our
               sponsorship team for more details.
             </p>
           </div>
-          <div className="border-b pb-4">
-            <h3 className="text-xl font-semibold mb-2">
+          <div className="border-b dark:border-gray-700 pb-4">
+            <h3 className="text-xl font-semibold mb-2 dark:text-white">
               Where is the event located?
             </h3>
-            <p className="text-gray-700">
+            <p className="text-gray-700 dark:text-gray-300">
               The event will be held at the Ashoka University on{" "}
-              <b>March 29th, 2025</b>.
+              <b>21st-22nd March, 2026</b>.
             </p>
           </div>
         </div>
@@ -737,12 +765,12 @@ const App = () => {
           onClick={() => setIsModalOpen(false)}
         >
           <div
-            className="bg-white rounded-lg max-w-2xl w-full mx-auto relative"
+            className="bg-white dark:bg-gray-800 rounded-lg max-w-2xl w-full mx-auto relative"
             onClick={(e) => e.stopPropagation()} // Prevent modal from closing when clicking inside
           >
             <button
               onClick={() => setIsModalOpen(false)}
-              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+              className="absolute top-4 right-4 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -767,15 +795,15 @@ const App = () => {
                   className="w-32 h-32 object-cover rounded-lg"
                 />
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">
+                  <h3 className="text-2xl font-bold mb-2 dark:text-white">
                     {selectedSpeaker.name}
                   </h3>
-                  <p className="text-red-700 text-lg mb-2">
+                  <p className="text-red-700 dark:text-red-500 text-lg mb-2">
                     {selectedSpeaker.role}
                   </p>
-                  <p className="text-gray-600 mb-4">{selectedSpeaker.topic}</p>
+                  <p className="text-gray-600 dark:text-gray-400 mb-4">{selectedSpeaker.topic}</p>
                   <div className="prose max-w-none">
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 dark:text-gray-300">
                       {selectedSpeaker.description ||
                         `Join ${selectedSpeaker.name} for an inspiring session on ${selectedSpeaker.topic}. 
                   This session will provide valuable insights and practical knowledge for attendees 
@@ -785,7 +813,7 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <div className="border-t px-6 py-4 bg-gray-50 rounded-b-lg">
+            <div className="border-t dark:border-gray-700 px-6 py-4 bg-gray-50 dark:bg-gray-900 rounded-b-lg">
               <button
                 onClick={() => setIsModalOpen(false)}
                 className="w-full bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-4 rounded-md"
