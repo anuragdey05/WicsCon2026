@@ -691,11 +691,14 @@ const App = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {Members.map((member) => (
-              <div className="flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-xl bg-white dark:bg-gray-800 rounded-lg p-6">
+              <div key={member.id} className="flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-xl bg-white dark:bg-gray-800 rounded-lg p-6">
                 <div className="w-48 h-48 rounded-full overflow-hidden mb-4 border-4 border-red-200 dark:border-red-900">
                   <img
                     src={member.image}
                     alt={member.name}
+                    loading="lazy"
+                    width="192"
+                    height="192"
                     className="w-full h-full object-cover"
                   />
                 </div>
