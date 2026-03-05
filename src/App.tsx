@@ -545,7 +545,7 @@ const App = () => {
       <section className="py-16 bg-white dark:bg-gray-900" id="speakers">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12 text-center text-red-700 dark:text-red-500">
-            Speakers & Events
+            WiCSCon 2025 Speakers & Events
           </h2>
 
           <div className="flex mb-8 border-b dark:border-gray-700">
@@ -637,7 +637,7 @@ const App = () => {
       <section className="py-16 bg-red-50 dark:bg-gray-800" id="sponsors">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12 text-center text-red-700 dark:text-red-500">
-            Sponsors & Partners
+            Past Sponsors & Partners
           </h2>
 
           <div className="mb-12">
