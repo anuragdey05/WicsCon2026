@@ -440,7 +440,7 @@ const App = () => {
             Designing Tomorrow, Today
           </h1>
           <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
-            With the theme Designing Tomorrow, Today, this two-day event will explore
+            This two-day conference will explore
             the intersections of technology, diversity, and inclusion. Building on the
             success of last year’s conference, which had over 200 attendees, WiCSCon
             2026 aims to create a space where participants can engage with emerging
