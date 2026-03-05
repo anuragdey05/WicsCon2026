@@ -415,7 +415,7 @@ const App = () => {
           </div>
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <a href="https://unstop.com/o/oa8ONt0?lb=IzeFOU31">
+            <a href="https://unstop.com/hackathons/wicscon-2026-hackherthon-women-in-tech-hackathon-2026-ashoka-university-1646227">
             <button className="bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-4 rounded-md">
               Register Now
             </button>
