@@ -447,7 +447,7 @@ const App = () => {
             ideas, examine the influence of technology on society, and consider how we
             shape the tools and systems of tomorrow.
           </p>
-          <a href="https://unstop.com/o/oa8ONt0?lb=IzeFOU31">
+          <a href="https://unstop.com/hackathons/wicscon-2026-hackherthon-women-in-tech-hackathon-2026-ashoka-university-1646227">
             <button className="text-lg px-8 py-3 rounded-full bg-gradient-to-r from-red-700 to-red-900 hover:from-red-800 hover:to-red-950 text-white font-medium shadow-lg">
               Register Now
             </button>
@@ -545,7 +545,7 @@ const App = () => {
       <section className="py-16 bg-white dark:bg-gray-900" id="speakers">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12 text-center text-red-700 dark:text-red-500">
-            WiCSCon 2025 Speakers & Events
+            WiCSCon 2025 : Speakers & Events
           </h2>
 
           <div className="flex mb-8 border-b dark:border-gray-700">
