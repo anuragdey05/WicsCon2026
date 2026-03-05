@@ -338,7 +338,7 @@ const Members = [
     id: 15,
     name: "Ritisha Kapur",
     role: "Competitions POC",
-    image: "/team/ritisha_kapur.jpeg",
+    image: "/team/ritishaa.jpg",
   },
   {
     id: 16,
