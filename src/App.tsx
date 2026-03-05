@@ -397,6 +397,23 @@ const App = () => {
                 </div>
               </div>
             </div>
+             <div className="relative group">
+              <button className="hover:text-red-600 dark:text-gray-200 transition-colors flex items-center gap-1">
+                Competition
+              </button>
+              <div className="absolute left-0 top-full pt-2 w-32 hidden group-hover:block z-50">
+                <div className="bg-white dark:bg-gray-800 rounded-md shadow-lg py-2 border border-gray-100 dark:border-gray-700">
+                  <a
+                    href="/wicscon_2024.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 hover:bg-red-50 dark:hover:bg-gray-700 hover:text-red-600 dark:text-gray-200 transition-colors"
+                  >
+                    2026
+                  </a>
+                </div>
+              </div>
+            </div>
             <a
               href="#speakers"
               className="hover:text-red-600 dark:text-gray-200 transition-colors"
