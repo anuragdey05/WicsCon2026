@@ -260,13 +260,13 @@ const Members = [
     id: 1,
     name: "Anam Ahamed",
     role: "Co-President",
-    image: "/team/anam_ahamed.jpg",
+    image: "/team/anam_a.jpeg",
   },
   {
     id: 2,
     name: "Ananya Agarwal",
     role: "Co-President",
-    image: "/team/ananya_agarwal.jpeg",
+    image: "/team/ananyaa.jpeg",
   },
   {
     id: 3,
@@ -277,19 +277,19 @@ const Members = [
   {
     id: 4,
     name: "Mahima Mayuresh",
-    role: "Events Co-POC",
-    image: "/team/mahima_mayuresh.jpg",
+    role: "Events POC",
+    image: "/team/mahima.jpeg",
   },
   {
     id: 5,
     name: "Sreejit Dey",
-    role: "Events Co-POC",
+    role: "Events POC",
     image: "/team/sreejit_dey.jpg",
   },
   {
     id: 6,
     name: "Prithviraj Hada",
-    role: "Logistics Co-POC",
+    role: "Logistics POC",
     image: "/team/prithviraj_hada.jpg",
   },
   {
@@ -301,20 +301,14 @@ const Members = [
   {
     id: 8,
     name: "Asmi Chaudhary",
-    role: "Outreach Co-POC",
+    role: "Outreach POC",
     image: "/team/asmi_chaudhary.jpeg",
   },
   {
     id: 9,
     name: "Bhavyaa Karanwal",
-    role: "Outreach Co-POC",
+    role: "Outreach POC",
     image: "/team/bhavyaa_karanwal.jpeg",
-  },
-  {
-    id: 10,
-    name: "Kyra Reyar",
-    role: "Marketing POC",
-    image: "/team/kyra_reyar.jpeg",
   },
   {
     id: 11,
@@ -337,13 +331,13 @@ const Members = [
   {
     id: 14,
     name: "Preksha Alva",
-    role: "Competitions Co-POC",
+    role: "Competitions POC",
     image: "/team/preksha_praveen_alva.jpeg",
   },
   {
     id: 15,
     name: "Ritisha Kapur",
-    role: "Competitions Co-POC",
+    role: "Competitions POC",
     image: "/team/ritisha_kapur.jpeg",
   },
   {
