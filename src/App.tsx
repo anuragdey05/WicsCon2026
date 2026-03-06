@@ -453,19 +453,19 @@ const App = () => {
           }}
         ></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Designing Tomorrow, Today
           </h1>
-          <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
             This two-day conference will explore
             the intersections of technology, diversity, and inclusion. Building on the
-            success of last year’s conference, which had over 200 attendees, WiCSCon
+            success of last year's conference, which had over 200 attendees, WiCSCon
             2026 aims to create a space where participants can engage with emerging
             ideas, examine the influence of technology on society, and consider how we
             shape the tools and systems of tomorrow.
           </p>
           <a href="https://unstop.com/hackathons/wicscon-2026-hackherthon-women-in-tech-hackathon-2026-ashoka-university-1646227">
-            <button className="text-lg px-8 py-3 rounded-full bg-gradient-to-r from-red-700 to-red-900 hover:from-red-800 hover:to-red-950 text-white font-medium shadow-lg">
+            <button className="text-base sm:text-lg px-6 sm:px-8 py-3 rounded-full bg-gradient-to-r from-red-700 to-red-900 hover:from-red-800 hover:to-red-950 text-white font-medium shadow-lg">
               Register Now
             </button>
           </a>
