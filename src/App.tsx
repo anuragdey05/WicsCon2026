@@ -442,7 +442,7 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-150 flex items-center justify-center overflow-hidden bg-red-900 dark:bg-red-950">
+      <section className="relative h-127 flex items-center justify-center overflow-hidden bg-red-900 dark:bg-red-950">
         <div className="absolute inset-0 bg-gradient-to-r from-red-900/80 to-red-800/80"></div>
         <div
           className="absolute inset-0 opacity-20"
