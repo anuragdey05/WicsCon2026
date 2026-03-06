@@ -295,8 +295,8 @@ const Members = [
   {
     id: 7,
     name: "Yididiya Megenta",
-    role: "Logistics Co-POC",
-    image: "/team/yididiya_megenta.jpg",
+    role: "Logistics POC",
+    image: "/team/yidd.jpg",
   },
   {
     id: 8,
@@ -343,7 +343,7 @@ const Members = [
   {
     id: 16,
     name: "Anurag Dey",
-    role: "Website Development",
+    role: "Website Development POC",
     image: "/team/anurag_dey.png",
   },
 ];
