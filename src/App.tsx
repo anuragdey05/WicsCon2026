@@ -442,7 +442,7 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center overflow-hidden bg-red-900 dark:bg-red-950">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-red-900 dark:bg-red-950 py-24">
         <div className="absolute inset-0 bg-gradient-to-r from-red-900/80 to-red-800/80"></div>
         <div
           className="absolute inset-0 opacity-20"
@@ -458,7 +458,6 @@ const App = () => {
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
             A two-day conference exploring the intersections of technology, diversity, and inclusion.
-            <br /><br />
             Building on 200+ attendees from last year, WiCSCon 2026 brings together emerging ideas, 
             examining technology's influence on society and how we shape the tools of tomorrow.
           </p>
